@@ -5,16 +5,25 @@ using UnityEngine;
 public class Explosion : MonoBehaviour
 {
     ParticleSystem ps;
-    private void Start()
+
+    
+
+    private void Awake()
     {
        ps =  gameObject.GetComponentInChildren<ParticleSystem>();
+    }
+
+    private void OnEnable()
+    {
+        ps.Clear();
+        ps.Play();
     }
 
     private void Update()
     {
         if(ps.isPlaying == false)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }

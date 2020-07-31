@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 3648984919215322710}
   - component: {fileID: 1472225512308537496}
   - component: {fileID: 3446500677931873428}
-  - component: {fileID: 407923167913076842}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy3
   m_TagString: E3
   m_Icon: {fileID: 0}
@@ -48,6 +47,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -96,18 +96,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &407923167913076842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5708003392498800101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c75b99923b41e0d4eb58ce0f1607217a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7167456989011990000
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,7 +105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4249831549835077428}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,11 +134,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4249831549835077428}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: c52494daade79c34e885ec8ae6a5dbcb,
-        type: 3}
-      propertyPath: m_Name
-      value: Enemy3
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c52494daade79c34e885ec8ae6a5dbcb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -226,6 +209,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 2e58e4f12f2a23240ac3955ba83fb0eb, type: 2}
+    - target: {fileID: -927199367670048503, guid: c52494daade79c34e885ec8ae6a5dbcb,
+        type: 3}
+      propertyPath: m_Name
+      value: Enemy3
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: c52494daade79c34e885ec8ae6a5dbcb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c52494daade79c34e885ec8ae6a5dbcb, type: 3}
 --- !u!4 &1451384971098584440 stripped

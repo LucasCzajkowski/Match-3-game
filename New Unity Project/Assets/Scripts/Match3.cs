@@ -481,7 +481,8 @@ public class Match3 : MonoBehaviour
         {
             for (int j = 0; j < nodesArray.GetLength(1); j++)
             {
-                nodesArray[i, j] = Instantiate(enemyArray[Random.Range(0, 5)], new Vector3(i, j, 0), Quaternion.identity);
+                //nodesArray[i, j] = Instantiate(enemyArray[Random.Range(0, 5)], new Vector3(i, j, 0), Quaternion.identity);
+                //nodesArray[i, j] = Pooler.Instance.Pooluj("En1", new Vector3(i,j,0));
             }
         }
     }
